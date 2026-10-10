@@ -1,0 +1,20 @@
+{
+  "name": "resorcerer",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Weekly customer assignment planner for Jira Cloud (Forge)",
+  "scripts": {
+    "test": "node --test test/*.test.js",
+    "lint": "forge lint",
+    "deploy": "forge deploy",
+    "tunnel": "forge tunnel"
+  },
+  "dependencies": {
+    "@forge/api": "^6.0.0",
+    "@forge/bridge": "^5.0.0",
+    "@forge/kvs": "^1.0.0",
+    "@forge/react": "^11.0.0",
+    "@forge/resolver": "^1.6.0",
+    "react": "^18.2.0"
+  }
+}
