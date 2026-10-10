@@ -1,0 +1,26 @@
+modules:
+  jira:globalPage:
+    - key: resorcerer-page
+      resource: main
+      render: native
+      resolver:
+        function: resolver
+      title: Resorcerer
+  function:
+    - key: resolver
+      handler: resolvers/index.handler
+resources:
+  - key: main
+    path: src/frontend/index.jsx
+app:
+  runtime:
+    name: nodejs22.x
+  id: ari:cloud:ecosystem::app/f7fa3436-8830-4860-ac02-037a98ed6e2d
+permissions:
+  scopes:
+    - storage:app
+    - read:jira-user
+    - read:jira-work
+    - read:servicedesk-request
+    - read:cmdb-object:jira
+    - read:cmdb-schema:jira
